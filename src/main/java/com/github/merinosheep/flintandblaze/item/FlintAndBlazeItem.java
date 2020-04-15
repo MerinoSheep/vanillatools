@@ -4,13 +4,14 @@ import com.github.merinosheep.flintandblaze.Main;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.math.BlockPos;
 public class FlintAndBlazeItem extends Item {
     public FlintAndBlazeItem() {
-        super(new Item.Properties().setNoRepair().maxStackSize(1).defaultMaxDamage(260));
+        super(new Item.Properties().setNoRepair().maxStackSize(1).defaultMaxDamage(260).group(ItemGroup.TOOLS));
     }
 
     @Override 
